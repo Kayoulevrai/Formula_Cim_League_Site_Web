@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Rubik+Mono+One&display=block">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Rubik+Mono+One&display=block">
+        <link rel="stylesheet" type="text/css" href="CSS/general.css">
+        <link rel="stylesheet" type="text/css" href="CSS/rediffusion.css">
+        
+
+        
+        <title>Formula Cim League</title>
+        
+    </head>
+    <body>
+        <header>
+            <div class="header-contenu">
+                <div class="logofcl">
+                    <img src="IMG/LOGOFCL.png" width="100px"/>
+                </div>
+                <div class="logo">
+                    <p>Formula<span>CIM</span>League</p>
+                </div>
+                <nav class="menu-nav">
+                    <ul>
+                        <li class="boutton">
+                            <a href="index.html" >Accueil</a>
+                        </li>
+                        <li class="boutton">
+                            <a href="#" class="active">Rediffusion</a>
+                        </li>
+                        
+                        <li class="boutton">
+                            <a href="calendrier.html">Calendrier</a>
+                        </li>
+                        <li class="boutton dropdown">
+                            <a>Pilotes ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="pilotes-d1.html">Division 1</a></li>
+                                <li><a href="pilotes-d2.html">Division 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="boutton dropdown">
+                            <a>Classement ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="classement-d1.html">Division 1</a></li>
+                                <li><a href="classement-d2.html">Division 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="boutton">
+                            <a href="reglement.html">Règlement</a>
+                        </li>
+                        <li class="boutton">
+                            <a href="réseaux.html" >Réseaux</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="Bannière">
+            <div class="B-Contenu">
+                <h1>Rediffusion & Highlights</h1>
+                <p>Revois tout nos meilleurs moments ci dessous</p>
+            </div>
+        </section>
+        <section class="Live-box">
+            <div class="Live-grille">
+                <h1 class="titre-section-Live">Live Formula Cim League</h1>
+                <div class="Live-card">
+                    <iframe src="https://player.twitch.tv/?channel=formula_cim_league&parent=kayoulevrai.github.io" allowfullscreen></iframe>
+                </div>
+                <div class="live-status">
+                    <span id="status-badge">⚫ HORS LIGNE</span>
+                    <span id="viewer-count"></span>
+                </div>
+            </div>
+        </section>
+        <section class="Highlights-box">
+            <h1 class="titre-section-Highlights">Highlights</h1>
+            <div class="Highlights-card"></div>
+        </section>
+
+        <footer>
+            <div class="Droit FCL">
+                <p>&copy; 2026 Formula CIM League. Tous droits réservés.</p>
+            </div>
+        </footer>
+        <script src="JS/rediffusion.js"></script>
+    </body>
+</html>

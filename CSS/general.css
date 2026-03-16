@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #15151e;
+    color: aliceblue;
+    padding-top: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-family: "Play", sans-serif;
+    background-color: #15151e;
+    color: #ffffff;
+    border-bottom: 3px solid #cd2f2f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-contenu {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 70px;
+}
+
+.logofcl {
+    margin-top: 8px;
+}
+
+.logofcl img {
+    width: 55px;
+    height: auto;
+}
+
+.logo {
+    font-family: "Rubik Mono One", monospace;
+    font-size: 30px;
+    font-weight: 100;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+
+.logo p {
+    margin: 0; 
+}
+
+span {
+    padding: 15px;
+    color: red;
+}
+
+nav {
+    margin-left: auto;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #15151e;
+    border: 2px solid #cd2f2f;
+    border-top: none;
+    min-width: 140px;
+    z-index: 1001;
+    padding: 8px 0;
+    border-radius: 0 0 8px 8px;
+    flex-direction: column;
+    gap: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-bottom: none !important;
+    text-align: center;
+    color: #fff;
+}
+
+.dropdown-menu a:hover {
+    background-color: #272731;
+    color: #e10600 !important;
+    border-bottom: none !important;
+}
+
+nav ul:not(.dropdown-menu) {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+    white-space: nowrap; 
+}
+
+nav a:hover,
+nav a.active {
+    border-bottom-color: #e10600;
+    color: #e10600;
+}
+
+.Bannière {
+    background-color: #313142;
+    height: 400px;
+    flex-shrink: 0;
+    margin-top: 73px
+}
+
+.B-Contenu {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.9)), url('../IMG/SF25_F125.png');
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.B-Contenu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255,255,255,0.03) 10px,
+        rgba(255,255,255,0.03) 20px
+    );
+    pointer-events: none; /* Permet aux clics de passer à travers */
+}
+
+.B-Contenu h1 {
+    font-size: 72px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 2;
+}
+
+.B-Contenu p {
+    font-size: 24px;
+    font-weight: 300;
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    border-top: 3px solid #cd2f2f;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.Droit.FCL {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.Droit.FCL p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
+}

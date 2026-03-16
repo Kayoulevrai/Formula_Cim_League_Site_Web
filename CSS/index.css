@@ -1,0 +1,123 @@
+.Actu {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex-shrink: 0
+}
+
+.titre-section {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-left: 5px solid #e10600;
+    padding-left: 20px;
+}
+
+
+div#Actu-grille {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+div#Actu-grille div {
+    flex: 1 1 300px;
+    padding: 0px;
+    height: 500px;
+    min-width: 300px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+
+}
+
+div#Actu-grille div.Actu-case-gauche{
+    background-color: #cc2e2e;
+    background: linear-gradient(to bottom, #cd2f2f , transparent 45%), #272731;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+div#Actu-grille div.Actu-case-millieu{
+    background-color: #967a7a;
+    background: linear-gradient(to bottom, #967a7a , transparent 45%), #272731;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+div#Actu-grille div.Actu-case-droite{
+    background-color: #a8a8a8;
+    background: linear-gradient(to bottom, #a8a8a8 , transparent 45%), #272731;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+div#Actu-grille div.Actu-case-gauche:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px #cc2e2e;
+}
+
+div#Actu-grille div.Actu-case-millieu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px #cc2e2e;
+}
+
+div#Actu-grille div.Actu-case-droite:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px #cc2e2e;
+}
+
+
+div#Actu-grille div.Actu-contenu{
+    background-color: #272731;
+    height: 25%;
+    padding: 30px;
+}
+
+.Actu-contenu h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.Actu-contenu p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.date-Actu {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: auto;
+}
+
+.Actu-image-gauche {
+    background-color: #fff;
+    background: linear-gradient(to bottom, #fff , transparent 90%), #272731;
+    height: 75%;
+    border-radius: 15px 15px 0 0;
+}
+
+.Actu-image-millieu {
+    background-color: #c8ff00;
+    background: linear-gradient(to bottom, #c8ff00 , transparent 90%), #272731;
+    height: 75%;
+    border-radius: 15px 15px 0 0;
+}
+
+.Actu-image-droite {
+    background-color: #00c3ff;
+    background: linear-gradient(to bottom, #00c3ff , transparent 90%), #272731;
+    height: 75%;
+    border-radius: 15px 15px 0 0;
+}
+
+.partenariat {
+    max-width: 1400px;
+    margin: 20px auto;
+
+}
