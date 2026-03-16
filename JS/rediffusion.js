@@ -1,5 +1,5 @@
 const CLIENT_ID = '9yvfen0jpshn2n1dl46babgorq67y5';
-const CLIENT_SECRET = '197v5o8jcmx4n2rs8xbx1u38p6il81';
+const CLIENT_SECRET = 'fyt2e6juwpazt2i71isdoepvuphz4y';
 const CHANNEL = 'formula_cim_league';
 
 async function getToken() {
@@ -22,7 +22,7 @@ async function checkLive() {
     const stream = data.data[0];
     const badge = document.getElementById('status-badge');
     const viewers = document.getElementById('viewer-count');
-g
+
     if (stream) {
         badge.textContent = '🔴 EN LIVE';
         badge.style.color = '#e10600';
